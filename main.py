@@ -31,9 +31,9 @@ for row in sheet.iter_rows(values_only=True):
     inst_width, inst_height = draw.textsize(institution, font=inst_font)
     prog_width, prog_height = draw.textsize(program, font=prog_font)
     draw.text(((img.width - name_width) / 2, 625), name, font=name_font, fill=(255,255,255))
-    draw.text((((img.width - inst_width) / 2)-478, 797), institution, font=inst_font, fill=(255,255,255))
-    draw.text((((img.width - prog_width) / 2)+550, 790), program, font=prog_font, fill=(255,255,255))
+    draw.text((((img.width - inst_width) / 2)-481, 797), institution, font=inst_font, fill=(255,255,255))
+    draw.text((((img.width - prog_width) / 2)+550, 791), program, font=prog_font, fill=(255,255,255))
 
-    img.save(f"{name}.jpg")
+    img.save(f"{name}.png")
     print(f"Process {count} Completed")
     count += 1
